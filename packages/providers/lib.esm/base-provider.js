@@ -978,7 +978,7 @@ export class BaseProvider extends Provider {
             if (network.chainId !== currentNetwork.chainId) {
                 // We are allowing network changes, things can get complex fast;
                 // make sure you know what you are doing if you use "any"
-                if (this.anyNetwork) {
+                if (true || this.anyNetwork) {
                     this._network = currentNetwork;
                     // Reset all internal block number guards and caches
                     this._lastBlockNumber = -2;
